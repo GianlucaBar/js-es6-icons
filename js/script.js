@@ -116,7 +116,7 @@ const selectedElements = $('#type');
 // stampo le opzioni della select 
 printFilterOptions(typesArray, selectedElements);
 
-// cambio cosa mostrare in base all'option selezionata
+// cambio cosa mostrare in base all'option selezionata e stampo
 selectedElements.change(function(){
     const selectedType = selectedElements.val();
 
@@ -160,7 +160,7 @@ function printIcons(iconsArray, colorArray, container) {
                 <div class="icon">
                     <i class="${family} ${prefix}${name}" style="color: ${coloreThisIcona};"></i>
                     <div>
-                     ${name.toUpperCase()} test
+                     ${name.toUpperCase()}
                     </div>
                 </div>
             `;
